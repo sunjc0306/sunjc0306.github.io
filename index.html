@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=18" />
+    <link rel="stylesheet" href="styles.css?v=22" />
   </head>
   <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -22,7 +22,9 @@
         <a class="wordmark" href="#about">Jianchi Sun<span>.</span></a>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" aria-label="Main navigation">
-          <a href="#about">About</a><a href="#news">News</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#awards">Awards</a>
+          <a href="#about">About</a>
+		  <!-- <a href="#news">News</a> -->
+		  <a href="#education">Education</a><a href="#publications">Publications</a><a href="#awards">Awards</a>
         </nav>
       </header>
       <main id="main" class="page-layout">
@@ -37,8 +39,8 @@ information and computing science from Wuhan
 Polytechnic University, China, in 2020, and the M.E.
 degree in computer science and technology from
 Central China Normal University, China, in 2023. </p>
-            <p>I have authored more than 20 papers in refereed international journals and conference proceedings, including IEEE TVCG, ACM TOG, IEEE TMM, AAAI, ACM MM,  and Chinese Journal of CAD&CG etc.</p>
-			<p>My research nterests include geometry processing
+            <p>I have authored (co-authored) more than 10 papers in refereed top international journals and conference proceedings, including IEEE TVCG, ACM TOG, IEEE TMM, AAAI, ACM MM,  and Chinese Journal of CAD&CG, etc.</p>
+			<p>My research interests include geometry processing
 and 3D human reconstruction.</p>
             <p class="availability"><strong>I am open to research collaborations and academic opportunities. Please feel free to get in touch.</strong></p>
  
@@ -61,9 +63,18 @@ and 3D human reconstruction.</p>
         <section class="section education" id="education" aria-labelledby="education-title">
           <div class="section-heading"><h2 id="education-title">Education</h2></div>
           <div class="education-grid">
-            <article class="education-item"><div class="institution-mark"><img src="assets/logo-wuhan-university.png" alt="Wuhan University emblem" width="269" height="269" loading="lazy" /></div><div><h3>Wuhan University</h3><p>Ph.D. in Computer Science and Technology</p><p class="focus">Advisor: Prof. Chunxia Xiao</p><p class="period">2023.09 — Present</p></div></article>
-            <article class="education-item"><div class="institution-mark"><img src="assets/logo-ccnu.jpg" alt="Central China Normal University emblem" width="200" height="200" loading="lazy" /></div><div><h3>Central China Normal University</h3><p>M.Eng. in Computer Science and Technology</p><p class="focus">Advisor: Prof. Leyuan Liu</p><p class="period">2020.09 — 2023.06</p></div></article>
-            <article class="education-item"><div class="institution-mark"><img src="assets/logo-whpu.png" alt="Wuhan Polytechnic University emblem" width="422" height="416" loading="lazy" /></div><div><h3>Wuhan Polytechnic University</h3><p>B.S. in Information and Computing Science</p><p class="focus">Advisor: Prof. Kang Zhou</p><p class="period">2016.09 — 2020.06</p></div></article>
+            <article class="education-item">
+              <a class="institution-mark" href="https://www.whu.edu.cn/" target="_blank" rel="noreferrer"><img src="assets/logo-wuhan-university.png" alt="Wuhan University emblem" width="269" height="269" loading="lazy" /></a>
+              <div class="education-copy"><h3><a href="https://www.whu.edu.cn/" target="_blank" rel="noreferrer">Wuhan University</a></h3><p>Ph.D. in Computer Science and Technology</p><p class="focus"><a href="https://jszy.whu.edu.cn/xiaochunxia/zh_CN/index.htm" target="_blank" rel="noreferrer">Advisor: Prof. Chunxia Xiao</a></p><p class="period">2023.09 — Present</p></div>
+            </article>
+            <article class="education-item">
+              <a class="institution-mark" href="https://www.ccnu.edu.cn/" target="_blank" rel="noreferrer"><img src="assets/logo-ccnu.jpg" alt="Central China Normal University emblem" width="200" height="200" loading="lazy" /></a>
+              <div class="education-copy"><h3><a href="https://www.ccnu.edu.cn/" target="_blank" rel="noreferrer">Central China Normal University</a></h3><p>M.E. in Computer Science and Technology</p><p class="focus"><a href="https://faculty.ccnu.edu.cn/2012980050/zh_CN/index.htm" target="_blank" rel="noreferrer">Advisor: Prof. Leyuan Liu</a></p><p class="period">2020.09 — 2023.06</p></div>
+            </article>
+            <article class="education-item">
+              <a class="institution-mark" href="https://www.whpu.edu.cn/" target="_blank" rel="noreferrer"><img src="assets/logo-whpu.png" alt="Wuhan Polytechnic University emblem" width="422" height="416" loading="lazy" /></a>
+              <div class="education-copy"><h3><a href="https://www.whpu.edu.cn/" target="_blank" rel="noreferrer">Wuhan Polytechnic University</a></h3><p>B.S. in Information and Computing Science</p><p class="focus"><a href="https://sjxy.whpu.edu.cn/info/1291/22061.htm" target="_blank" rel="noreferrer">Advisor: Prof. Kang Zhou</a></p><p class="period">2016.09 — 2020.06</p></div>
+            </article>
           </div>
         </section>
 
@@ -108,10 +119,16 @@ and 3D human reconstruction.</p>
               <a class="profile-university" href="https://cs.whu.edu.cn/" target="_blank" rel="noreferrer">Wuhan University</a>
               <p class="profile-location">Wuhan, China</p>
               <div class="profile-actions" aria-label="Academic profiles and contact">
-                <a href="https://scholar.google.com.hk/citations?user=JEDKSXsAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
-                <a href="https://github.com/sunjc0306" target="_blank" rel="noreferrer">GitHub</a>
-                <a href="./assets/sunjc0306_resume.pdf" aria-label="View curriculum vitae highlights">CV</a>
-                <a href="mailto:sunjc0306@whu.edu.cn">Email</a>
+                <a class="profile-action-icon" href="https://scholar.google.com.hk/citations?user=JEDKSXsAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M6.5 11.3v4.2c2.9 2.2 8.1 2.2 11 0v-4.2M21 10v5"/></svg>
+                </a>
+                <!-- <a href="https://github.com/sunjc0306" target="_blank" rel="noreferrer">GitHub</a> -->
+                <a class="profile-action-icon is-cv" href="./assets/sunjc0306_resume.pdf" download="Jianchi_Sun_CV.pdf" aria-label="Download Jianchi Sun's CV" title="Download CV">
+                  <span aria-hidden="true">CV</span>
+                </a>
+                <a class="profile-action-icon" href="mailto:sunjc0306@whu.edu.cn" aria-label="Email Jianchi Sun" title="Email">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m5 7 7 5.5L19 7"/></svg>
+                </a>
               </div>
             </figcaption>
           </figure>
