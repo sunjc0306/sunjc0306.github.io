@@ -1,0 +1,415 @@
+{
+  "publications": [
+    {
+      "id": "paper-one",
+      "venue": "TVCG",
+      "year": "2026",
+      "badge": "CCF A",
+      "title": "GeoCoHuman: Single-view 3D Clothed Human Reconstruction via Complementary Geometry Priors",
+      "authors": [
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Fei Luo" },
+        { "name": "Xiangqian Shen" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "IEEE Transactions on Visualization and Computer Graphics",
+      "image": {
+        "src": "./tear/TVCG2026.png",
+        "alt": "Conceptual diagram of human agency in generative AI collaboration"
+      },
+      "links": [
+        { "label": "Project", "url": "https://sunjc0306.github.io/GeoCoHuman/" },
+        { "label": "Paper", "url": "https://graphvision.whu.edu.cn/paper/2026/SunJianChi_TVCG_2026.pdf" },
+        { "label": "Code", "url": "https://github.com/sunjc0306/GeoCoHuman-main" }
+      ]
+    },
+    {
+      "id": "paper-two",
+      "venue": "ACM MM",
+      "year": "2026",
+      "badge": "CCF A",
+      "title": "S2R: Illumination-Aware Synthetic-to-Real Adaptation for Single-Image Human Material Estimation",
+      "authors": [
+        { "name": "Yu Jiang" },
+        { "name": "Jiahao Xia" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Jiongming Qin" },
+        { "name": "Tuo Cao" },
+        { "name": "Yusen Wang" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "ACM International Conference on Multimedia",
+      "image": {
+        "src": "https://graphvision.whu.edu.cn/image/2026/JiangYu_ACMMM_2026.png",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "https://graphvision.whu.edu.cn/paper/2026/JiangYu_ACMMM_2026.pdf" },
+        { "label": "Project", "url": "https://jiangyu1181.github.io/S2R/" },
+        { "label": "Code", "url": "https://github.com/Jiangyu1181/S2R" }
+      ]
+    },
+    {
+      "id": "paper-three",
+      "venue": "ACM MM",
+      "year": "2026",
+      "badge": "CCF A",
+      "title": "AttriHuman: Controllable Human Image Generation with Spatial Alignment and Attribute Consistency",
+      "authors": [
+        { "name": "Wenzhuo Fan" },
+        { "name": "Hongsheng Zheng" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Fei Fang" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "ACM International Conference on Multimedia",
+      "image": {
+        "src": "https://graphvision.whu.edu.cn/image/2026/FanWenZhuo_ACMMM_2026.png",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "#" },
+        { "label": "Project", "url": "#" },
+        { "label": "Code", "url": "https://github.com/wenzhuofanfan/AttriHuman" }
+      ]
+    }
+  ,{
+      "id": "5",
+      "venue": "TOG (SIGGRAPH)",
+      "year": "2026",
+      "badge": "CCF A",
+      "title": "HumanFlow: Controllable Human Image Generation via Flow Matching",
+      "authors": [
+        { "name": "Wenzhuo Fan" },
+        { "name": "Hongsheng Zheng" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Fei Fang" },
+        { "name": "Hong Ding" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "ACM Transactions on Graphics (SIGGRAPH)",
+      "image": {
+        "src": "https://graphvision.whu.edu.cn/image/2026/FanWenZhuo_Siggraph_2026.png",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "https://graphvision.whu.edu.cn/paper/2026/FanWenZhuo_Siggraph_2026.pdf" },
+        { "label": "Project", "url": "https://wenzhuofanfan.github.io/HumanFlow/" },
+        { "label": "Code", "url": "https://github.com/wenzhuofanfan/HumanFlow" }
+      ]
+    }
+  ,
+    {
+      "id": "4",
+      "venue": "AAAI",
+      "year": "2026",
+      "badge": "CCF A",
+      "title": "HumanPro: Single-view 3D Clothed Human Reconstruction with Progressive Normal Guidance",
+      "authors": [
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Fei Luo" },
+        { "name": "Wenzhuo Fan" },
+        { "name": "Yu Jian" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "The 40th Annual AAAI Conference on Artificial Intelligence",
+      "image": {
+        "src": "https://graphvision.whu.edu.cn/image/2026/SunJianChi_AAAI_2026.png",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "https://graphvision.whu.edu.cn/paper/2026/SunJianChi_AAAI_2026.pdf" },
+        { "label": "Project", "url": "https://sunjc0306.github.io/HumanPro/" },
+        { "label": "Demo", "url": "https://www.bilibili.com/video/BV1PJqpBbELx" }
+      ]
+    }
+  ,
+    {
+      "id": "6",
+      "venue": "TVC",
+      "year": "2026",
+      "badge": "CCF C",
+      "title": "HAFMat: Hybrid priors guided adaptive fusion for single-image human material estimation",
+      "authors": [
+        { "name": "Yu Jiang" },
+        { "name": "Jiahao Xia" },
+        { "name": "Jiongming Qin" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "The Visual Computer (CGI2026)",
+      "image": {
+        "src": "./tear/371_2026_4588_Fig1_HTML.webp",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "#" },
+        { "label": "Project", "url": "#" },
+        { "label": "Demo", "url": "#" }
+      ]
+    },    {
+      "id": "7",
+      "venue": "TVC",
+      "year": "2026",
+      "badge": "CCF C",
+      "title": "DuoLit: dual-level priors and gated lighting injection for human material estimation",
+      "authors": [
+        { "name": "Yu Jiang" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Xiangqian Shen" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "The Visual Computer (CGI2026)",
+      "image": {
+        "src": "./tear/371_2026_4573_Fig2_HTML.webp",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "#" },
+        { "label": "Project", "url": "#" },
+        { "label": "Demo", "url": "#" }
+      ]
+    },    {
+      "id": "8",
+      "venue": "TVC",
+      "year": "2026",
+      "badge": "CCF C",
+      "title": "GUIDE: Dual-Gated semantic conditioning with correctable priors for single-image human material estimation",
+      "authors": [
+        { "name": "Yu Jiang" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Xiangqian Shen" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "The Visual Computer (CGI2026)",
+      "image": {
+        "src": "./tear/371_2026_4571_Fig2_HTML.webp",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "#" },
+        { "label": "Project", "url": "#" },
+        { "label": "Demo", "url": "#" }
+      ]
+    },
+    {
+      "id": "9",
+      "venue": "ACMMM",
+      "year": "2025",
+      "badge": "CCF A",
+      "title": "I2HDiffuser: Image Illumination Harmonization Meets the Diffusion Model",
+      "authors": [
+        { "name": "Zhongyun Bao" },
+        { "name": "Gang Fu" },
+        { "name": "Jianchi Sun", "highlight": true },
+        { "name": "Jing Zhou" },
+        { "name": "Ziqi Yu" },
+        { "name": "Chunxia Xiao" }
+      ],
+      "description": "ACM International Conference on Multimedia",
+      "image": {
+        "src": "https://graphvision.whu.edu.cn/image/2025/BaoZhongYun_ACMMM_2025.png",
+        "alt": "Interface study for human-AI co-creation"
+      },
+      "links": [
+        { "label": "Paper", "url": "https://graphvision.whu.edu.cn/paper/2025/BaoZhongYun_ACMMM_2025.pdf" },
+        { "label": "Project", "url": "#" },
+        { "label": "Demo", "url": "#" }
+      ]
+    }
+  ,    {
+    "id": "10",
+    "venue": "TVC",
+    "year": "2025",
+    "badge": "CCF C",
+    "title": "EE-Head: emotion estimation for precise facial expression in NeRF head avatars",
+    "authors": [
+      { "name": "Enxu Zhao" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Fei Luo" },
+      { "name": "Chunxia Xiao" }
+    ],
+    "description": "The Visual Computer (CGI2025)",
+    "image": {
+      "src": "./tear/371_2025_3987_Fig1_HTML.webp",
+      "alt": "Interface study for human-AI co-creation"
+    },
+    "links": [
+      { "label": "Paper", "url": "#" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  },
+  
+   {
+    "id": "11",
+    "venue": "BIT",
+    "year": "2024",
+    "badge": "CCF C",
+    "title": "Evaluation of the gross motor abilities of autistic children with a computerised evaluation method",
+    "authors": [
+      { "name": "Xiaodi Liu" },
+	    { "name": "Jingying Chen" },
+		  { "name": "Guangshuai Wang" },
+		    { "name": "Kun Zhang" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Pianpian Ma" },
+      { "name": "Rujing Zhang" }
+    ],
+    "description": "Behaviour & Information Technology",
+    "image": {
+      "src": "./tear/tbit_a_2275163_f0001_oc.jpg",
+      "alt": "Interface study for human-AI co-creation"
+    },
+    "links": [
+      { "label": "Paper", "url": "#" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  }
+  
+  
+  , 
+  {
+    "id": "seif-2024",
+    "venue": "TMM",
+    "year": "2024",
+    "badge": "CCF B",
+    "title": "SeIF: Semantic-Constrained Deep Implicit Function for Single-Image 3D Head Reconstruction",
+    "authors": [
+      { "name": "Leyuan Liu" },
+      { "name": "Xu Liu" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Changxin Gao" },
+      { "name": "Jingying Chen" }
+    ],
+    "description": "IEEE Transactions on Multimedia",
+    "image": {
+      "src": "./tear/chen2-3405721-large.gif",
+      "alt": "SeIF single-image 3D head reconstruction"
+    },
+    "links": [
+      { "label": "Paper", "url": "#" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "normal-enhanced-head-2024-cn",
+    "venue": "JCAD&CG",
+    "year": "2024",
+    "badge": "CCF A",
+    "title": "基于法线贴图增强隐式函数的单图像三维头部重建",
+    "authors": [
+      { "name": "Leyuan Liu" },
+      { "name": "Xu Liu" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Jingying Chen" }
+    ],
+    "description": "计算机辅助设计与图形学学报",
+    "image": {
+      "src": "./assets/paper-agency.svg",
+      "alt": "基于法线贴图增强隐式函数的单图像三维头部重建"
+    },
+    "links": [
+      { "label": "Paper", "url": "" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "single-image-human-reconstruction-survey-2024-cn",
+    "venue": "JHUST",
+    "year": "2024",
+    "badge": "Journal Article",
+    "title": "基于深度学习的单图像三维人体重建研究综述",
+    "authors": [
+      { "name": "Leyuan Liu" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Yunqi Gao" },
+      { "name": "Changxin Gao" },
+      { "name": "Jingying Chen" }
+    ],
+    "description": "华中科技大学学报（自然科学版）",
+    "image": {
+      "src": "./assets/paper-agency.svg",
+      "alt": "基于深度学习的单图像三维人体重建研究综述"
+    },
+    "links": [
+      { "label": "Paper", "url": "https://faculty.ccnu.edu.cn/liuleyuan/en/lwcg/216573/content/11124.htm" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "pose-shape-2024",
+    "venue": "ISAIR",
+    "year": "2024",
+    "badge": "EI",
+    "title": "Single-Image 3D Human Pose and Shape Estimation Enhanced by Clothed 3D Human Reconstruction",
+    "authors": [
+      { "name": "Leyuan Liu" },
+      { "name": "Yunqi Gao" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Jingying Chen" }
+    ],
+    "description": "International Symposium on Artificial Intelligence and Robotics",
+    "image": {
+      "src": "./tear/545489_1_En_4_Fig1_HTML.webp",
+      "alt": "Single-image 3D human pose and shape estimation"
+    },
+    "links": [
+      { "label": "Paper", "url": "#" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "clothed-human-2023",
+    "venue": "Multimedia Systems",
+    "year": "2023",
+    "badge": "CCF C",
+    "title": "Single-image clothed 3D human reconstruction guided by a well-aligned parametric body model",
+    "authors": [
+      { "name": "Leyuan Liu" },
+      { "name": "Yunqi Gao" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Jingying Chen" }
+    ],
+    "description": "Multimedia Systems",
+    "image": {
+      "src": "./tear/530_2023_1069_Fig1_HTML.webp",
+      "alt": "Clothed 3D human reconstruction guided by a parametric body model"
+    },
+    "links": [
+      { "label": "Paper", "url": "#" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  },
+  {
+    "id": "hei-human-2021",
+    "venue": "PRCV",
+    "year": "2021",
+    "badge": "CCF C",
+    "title": "HEI-Human: A Hybrid Explicit and Implicit Method for Single-View 3D Clothed Human Reconstruction",
+    "authors": [
+      { "name": "Leyuan Liu" },
+      { "name": "Jianchi Sun", "highlight": true },
+      { "name": "Yunqi Gao" },
+      { "name": "Jingying Chen" }
+    ],
+    "description": "Pattern Recognition and Computer Vision",
+    "image": {
+      "src": "./tear/521842_1_En_21_Fig2_HTML.webp",
+      "alt": "HEI-Human single-view 3D clothed human reconstruction"
+    },
+    "links": [
+      { "label": "Paper", "url": "#" },
+      { "label": "Project", "url": "#" },
+      { "label": "Demo", "url": "#" }
+    ]
+  }
+  
+  ]
+}
