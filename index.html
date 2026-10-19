@@ -13,36 +13,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=22" />
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem('site-theme');
+          const theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.dataset.theme = theme;
+        } catch (_) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=27" />
   </head>
   <body id="top">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="page-shell">
-      <header class="site-header">
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header-inner">
         <a class="wordmark" href="#about">Jianchi Sun<span>.</span></a>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-		  <!-- <a href="#news">News</a> -->
-		  <a href="#education">Education</a><a href="#publications">Publications</a><a href="#awards">Awards</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#publications" data-i18n="nav.publications">Publications</a>
+          <a href="#awards" data-i18n="nav.awards">Awards</a>
         </nav>
-      </header>
+        <div class="header-controls" aria-label="Display preferences">
+          <button class="header-control theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Dark mode">
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.3A8.5 8.5 0 0 1 8.7 3.8 8.5 8.5 0 1 0 20.2 15.3Z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+          </button>
+          <button class="header-control language-toggle" id="language-toggle" type="button" aria-label="切换到中文" title="切换到中文">中文</button>
+          <button class="header-control menu-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="page-shell">
       <main id="main" class="page-layout">
         <div class="content-column">
         <section class="intro" id="about" aria-labelledby="name">
           <div class="intro-copy">
             <!-- <p class="eyebrow">WUHAN UNIVERSITY · SCHOOL OF COMPUTER SCIENCE</p> -->
-            <h1 id="name">About Me <span>孙见弛</span></h1>
+            <h1 id="name" data-i18n-html="about.title">About Me <span>孙见弛</span></h1>
             <!-- <p class="role">Ph.D. Candidate <i>·</i> Wuhan, China</p> -->
-            <p>I am a Ph.D. candidate in computer science and technology, supervised by <a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">Prof. Chunxia Xiao</a>, at Wuhan University, China. Before that, I received the B.S. degree in
-information and computing science from Wuhan
-Polytechnic University, China, in 2020, and the M.E.
-degree in computer science and technology from
-Central China Normal University, China, in 2023. </p>
-            <p>I have authored (co-authored) more than 10 papers in refereed top international journals and conference proceedings, including IEEE TVCG, ACM TOG, IEEE TMM, AAAI, ACM MM,  and Chinese Journal of CAD&CG, etc.</p>
-			<p>My research interests include geometry processing
-and 3D human reconstruction.</p>
-            <p class="availability"><strong>I am open to research collaborations and academic opportunities. Please feel free to get in touch.</strong></p>
+            <p data-i18n-html="about.bio">I am a Ph.D. candidate in computer science and technology, supervised by <a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">Prof. Chunxia Xiao</a>, at Wuhan University, China. Before that, I received the B.S. degree in information and computing science from Wuhan Polytechnic University, China, in 2020, and the M.E. degree in computer science and technology from Central China Normal University, China, in 2023.</p>
+            <p data-i18n="about.papers">I have authored (co-authored) more than 10 papers in refereed top international journals and conference proceedings, including IEEE TVCG, ACM TOG, IEEE TMM, AAAI, ACM MM, and Chinese Journal of CAD&amp;CG, etc.</p>
+            <p data-i18n="about.interests">My research interests include geometry processing and 3D human reconstruction.</p>
+            <p class="availability"><strong data-i18n="about.availability">I am open to research collaborations and academic opportunities. Please feel free to get in touch.</strong></p>
  
             <!-- <div class="research-topics" aria-label="Research interests"><span><a href="mailto:yourname@university.edu">Email</a></span><span><a href="#scholar">Google Scholar</a></span><span><a href="#github">GitHub </a></span><span><a href="#cv">CV </a></span></div> -->
           </div>
@@ -61,19 +77,19 @@ and 3D human reconstruction.</p>
         </section> -->
 
         <section class="section education" id="education" aria-labelledby="education-title">
-          <div class="section-heading"><h2 id="education-title">Education</h2></div>
+          <div class="section-heading"><h2 id="education-title" data-i18n="education.title">Education</h2></div>
           <div class="education-grid">
             <article class="education-item">
               <a class="institution-mark" href="https://www.whu.edu.cn/" target="_blank" rel="noreferrer"><img src="assets/logo-wuhan-university.png" alt="Wuhan University emblem" width="269" height="269" loading="lazy" /></a>
-              <div class="education-copy"><h3><a href="https://www.whu.edu.cn/" target="_blank" rel="noreferrer">Wuhan University</a></h3><p>Ph.D. in Computer Science and Technology</p><p class="focus"><a href="https://jszy.whu.edu.cn/xiaochunxia/zh_CN/index.htm" target="_blank" rel="noreferrer">Advisor: Prof. Chunxia Xiao</a></p><p class="period">2023.09 — Present</p></div>
+              <div class="education-copy"><h3><a href="https://www.whu.edu.cn/" target="_blank" rel="noreferrer" data-i18n="education.whu">Wuhan University</a></h3><p data-i18n="education.phd">Ph.D. in Computer Science and Technology</p><p class="focus"><a href="https://jszy.whu.edu.cn/xiaochunxia/zh_CN/index.htm" target="_blank" rel="noreferrer" data-i18n="education.advisorXiao">Advisor: Prof. Chunxia Xiao</a></p><p class="period" data-i18n="education.present">2023.09 — Present</p></div>
             </article>
             <article class="education-item">
               <a class="institution-mark" href="https://www.ccnu.edu.cn/" target="_blank" rel="noreferrer"><img src="assets/logo-ccnu.jpg" alt="Central China Normal University emblem" width="200" height="200" loading="lazy" /></a>
-              <div class="education-copy"><h3><a href="https://www.ccnu.edu.cn/" target="_blank" rel="noreferrer">Central China Normal University</a></h3><p>M.E. in Computer Science and Technology</p><p class="focus"><a href="https://faculty.ccnu.edu.cn/2012980050/zh_CN/index.htm" target="_blank" rel="noreferrer">Advisor: Prof. Leyuan Liu</a></p><p class="period">2020.09 — 2023.06</p></div>
+              <div class="education-copy"><h3><a href="https://www.ccnu.edu.cn/" target="_blank" rel="noreferrer" data-i18n="education.ccnu">Central China Normal University</a></h3><p data-i18n="education.master">M.E. in Computer Science and Technology</p><p class="focus"><a href="https://faculty.ccnu.edu.cn/2012980050/zh_CN/index.htm" target="_blank" rel="noreferrer" data-i18n="education.advisorLiu">Advisor: Prof. Leyuan Liu</a></p><p class="period">2020.09 — 2023.06</p></div>
             </article>
             <article class="education-item">
               <a class="institution-mark" href="https://www.whpu.edu.cn/" target="_blank" rel="noreferrer"><img src="assets/logo-whpu.png" alt="Wuhan Polytechnic University emblem" width="422" height="416" loading="lazy" /></a>
-              <div class="education-copy"><h3><a href="https://www.whpu.edu.cn/" target="_blank" rel="noreferrer">Wuhan Polytechnic University</a></h3><p>B.S. in Information and Computing Science</p><p class="focus"><a href="https://sjxy.whpu.edu.cn/info/1291/22061.htm" target="_blank" rel="noreferrer">Advisor: Prof. Kang Zhou</a></p><p class="period">2016.09 — 2020.06</p></div>
+              <div class="education-copy"><h3><a href="https://www.whpu.edu.cn/" target="_blank" rel="noreferrer" data-i18n="education.whpu">Wuhan Polytechnic University</a></h3><p data-i18n="education.bachelor">B.S. in Information and Computing Science</p><p class="focus"><a href="https://sjxy.whpu.edu.cn/info/1291/22061.htm" target="_blank" rel="noreferrer" data-i18n="education.advisorZhou">Advisor: Prof. Kang Zhou</a></p><p class="period">2016.09 — 2020.06</p></div>
             </article>
           </div>
         </section>
@@ -91,19 +107,19 @@ and 3D human reconstruction.</p>
         </section> -->
 
         <section class="section" id="publications" aria-labelledby="publications-title">
-          <div class="section-heading"><h2 id="publications-title"> Publication</h2></div>
+          <div class="section-heading"><h2 id="publications-title" data-i18n="publications.title">Publication</h2></div>
           <div class="publications" id="publication-list" aria-live="polite"></div>
-          <p class="publication-status" id="publication-status">Loading publications…</p>
+          <p class="publication-status" id="publication-status" data-i18n="publications.loading">Loading publications…</p>
           <noscript><p class="publication-status is-error">JavaScript is required to load publications.</p></noscript>
         </section>
 
         <section class="section awards" id="awards" aria-labelledby="awards-title">
-          <div class="section-heading"><h2 id="awards-title">Awards &amp; Service</h2></div>
+          <div class="section-heading"><h2 id="awards-title" data-i18n="awards.title">Awards &amp; Service</h2></div>
           <ul class="award-list">
-            <li><time>2023.05</time><div><strong>挑战杯全国大学生课外科技作品大赛</strong><span>第二负责人 · 湖北省一等奖</span></div></li>
-            <li><time>2022.08</time><div><strong>中国机器人及人工智能比赛</strong><span>负责人 · 国家三等奖</span></div></li>
-            <li><time>2019.10</time><div><strong>全国大学生数学建模竞赛</strong><span>负责人 · 湖北省三等奖</span></div></li>
-            <li><time>2019.05</time><div><strong>美国大学生数学建模竞赛</strong><span>负责人 · Meritorious Winner奖</span></div></li>
+            <li><time>2023.05</time><div><strong data-i18n="awards.challenge">Challenge Cup National College Student Science and Technology Competition</strong><span data-i18n="awards.challengePrize">Second Lead · First Prize of Hubei Province</span></div></li>
+            <li><time>2022.08</time><div><strong data-i18n="awards.robot">China Robot and Artificial Intelligence Competition</strong><span data-i18n="awards.robotPrize">Project Lead · National Third Prize</span></div></li>
+            <li><time>2019.10</time><div><strong data-i18n="awards.modeling">National College Student Mathematical Modeling Competition</strong><span data-i18n="awards.modelingPrize">Project Lead · Third Prize of Hubei Province</span></div></li>
+            <li><time>2019.05</time><div><strong data-i18n="awards.mcm">Mathematical Contest in Modeling</strong><span data-i18n="awards.mcmPrize">Project Lead · Meritorious Winner</span></div></li>
           </ul>
         </section>
         </div>
@@ -114,10 +130,10 @@ and 3D human reconstruction.</p>
             <figcaption class="profile-details">
               <p class="profile-name">Jianchi Sun</p>
               <!-- <p class="profile-name-cn" lang="zh-CN">孙见弛</p> -->
-              <p class="profile-role">Ph.D. Candidate</p>
-              <p class="profile-school">School of Computer Science</p>
-              <a class="profile-university" href="https://cs.whu.edu.cn/" target="_blank" rel="noreferrer">Wuhan University</a>
-              <p class="profile-location">Wuhan, China</p>
+              <p class="profile-role" data-i18n="profile.role">Ph.D. Candidate</p>
+              <p class="profile-school" data-i18n="profile.school">School of Computer Science</p>
+              <a class="profile-university" href="https://cs.whu.edu.cn/" target="_blank" rel="noreferrer" data-i18n="profile.university">Wuhan University</a>
+              <p class="profile-location" data-i18n="profile.location">Wuhan, China</p>
               <div class="profile-actions" aria-label="Academic profiles and contact">
                 <a class="profile-action-icon" href="https://scholar.google.com.hk/citations?user=JEDKSXsAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar">
                   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9.5 12 5l9 4.5-9 4.5-9-4.5Z"/><path d="M6.5 11.3v4.2c2.9 2.2 8.1 2.2 11 0v-4.2M21 10v5"/></svg>
@@ -137,6 +153,6 @@ and 3D human reconstruction.</p>
 
       <!-- <footer><span>© <span id="year"></span> Jianchi Sun · Last updated October 2026</span><div><a href="mailto:sunjc0306@whu.edu.cn">sunjc0306@whu.edu.cn</a><a href="#top">Back to top ↑</a></div></footer> -->
     </div>
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>
