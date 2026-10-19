@@ -274,7 +274,7 @@
     "id": "seif-2024",
     "venue": "TMM",
     "year": "2024",
-    "badge": "CCF B",
+    "badge": "CCF A",
     "title": "SeIF: Semantic-Constrained Deep Implicit Function for Single-Image 3D Head Reconstruction",
     "authors": [
       { "name": "Leyuan Liu" },
