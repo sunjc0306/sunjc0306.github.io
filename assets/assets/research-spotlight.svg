@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430">
+  <rect width="1200" height="430" fill="#f4f8f7"/><g stroke="#bfd2d0" stroke-width="1"><path d="M0 86h1200M0 172h1200M0 258h1200M0 344h1200"/><path d="M150 0v430M300 0v430M450 0v430M600 0v430M750 0v430M900 0v430M1050 0v430"/></g>
+  <g font-family="Arial,sans-serif"><circle cx="216" cy="215" r="75" fill="#0f5054"/><text x="216" y="210" text-anchor="middle" fill="#fff" font-size="24" font-weight="700">HUMAN</text><text x="216" y="238" text-anchor="middle" fill="#b9dad4" font-size="13">intent · judgment</text>
+  <circle cx="984" cy="215" r="75" fill="#3b7183"/><text x="984" y="210" text-anchor="middle" fill="#fff" font-size="24" font-weight="700">AI</text><text x="984" y="238" text-anchor="middle" fill="#d0e2e9" font-size="13">models · tools</text>
+  <rect x="474" y="135" width="252" height="160" rx="16" fill="#fff" stroke="#6f9993" stroke-width="2"/><text x="600" y="195" text-anchor="middle" fill="#0f5054" font-size="18" font-weight="700">COLLABORATIVE</text><text x="600" y="220" text-anchor="middle" fill="#0f5054" font-size="18" font-weight="700">INTERACTION</text><path d="M540 250h120" stroke="#b5c9c5"/><text x="600" y="272" text-anchor="middle" fill="#65717b" font-size="12">explain · steer · reflect</text></g>
+  <g fill="none" stroke="#176f72" stroke-width="2"><path d="M291 215h174"/><path d="M735 215h174"/><path d="M449 208l16 7-16 7M751 208l-16 7 16 7"/></g>
+  <g font-family="monospace" font-size="11" fill="#65717b"><text x="375" y="195" text-anchor="middle">AGENCY</text><text x="825" y="195" text-anchor="middle">CAPABILITY</text><text x="600" y="43" text-anchor="middle" letter-spacing="2">A HUMAN-CENTERED RESEARCH PROGRAM</text></g>
+</svg>
