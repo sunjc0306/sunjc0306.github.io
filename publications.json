@@ -308,7 +308,7 @@
     ],
     "description": "计算机辅助设计与图形学学报",
     "image": {
-      "src": "./assets/paper-agency.svg",
+      "src": "./tear/1.png",
       "alt": "基于法线贴图增强隐式函数的单图像三维头部重建"
     },
     "links": [
@@ -332,7 +332,7 @@
     ],
     "description": "华中科技大学学报（自然科学版）",
     "image": {
-      "src": "./assets/paper-agency.svg",
+      "src": "./tear/2.png",
       "alt": "基于深度学习的单图像三维人体重建研究综述"
     },
     "links": [
