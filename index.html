@@ -1,8 +1,125 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal academic homepage — research, publications, education, and contact." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Jianchi Sun | Academic Homepage" />
+    <meta property="og:description" content="Research in human-centered AI, human–AI collaboration, and social computing." />
+    <meta property="og:type" content="website" />
+    <title>Jianchi Sun | Academic Homepage</title>
+    <link rel="icon" href="assets/favicon.jepg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=18" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#about">Jianchi Sun<span>.</span></a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a><a href="#news">News</a><a href="#education">Education</a><a href="#publications">Publications</a><a href="#awards">Awards</a>
+        </nav>
+      </header>
+      <main id="main" class="page-layout">
+        <div class="content-column">
+        <section class="intro" id="about" aria-labelledby="name">
+          <div class="intro-copy">
+            <!-- <p class="eyebrow">WUHAN UNIVERSITY · SCHOOL OF COMPUTER SCIENCE</p> -->
+            <h1 id="name">About Me <span>孙见弛</span></h1>
+            <!-- <p class="role">Ph.D. Candidate <i>·</i> Wuhan, China</p> -->
+            <p>I am a Ph.D. candidate in computer science and technology, supervised by <a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">Prof. Chunxia Xiao</a>, at Wuhan University, China. Before that, I received the B.S. degree in
+information and computing science from Wuhan
+Polytechnic University, China, in 2020, and the M.E.
+degree in computer science and technology from
+Central China Normal University, China, in 2023. </p>
+            <p>I have authored more than 20 papers in refereed international journals and conference proceedings, including IEEE TVCG, ACM TOG, IEEE TMM, AAAI, ACM MM,  and Chinese Journal of CAD&CG etc.</p>
+			<p>My research nterests include geometry processing
+and 3D human reconstruction.</p>
+            <p class="availability"><strong>I am open to research collaborations and academic opportunities. Please feel free to get in touch.</strong></p>
+ 
+            <!-- <div class="research-topics" aria-label="Research interests"><span><a href="mailto:yourname@university.edu">Email</a></span><span><a href="#scholar">Google Scholar</a></span><span><a href="#github">GitHub </a></span><span><a href="#cv">CV </a></span></div> -->
+          </div>
+        </section>
+<!-- 
+        <section class="section news" id="news" aria-labelledby="news-title">
+          <div class="section-heading"><h2 id="news-title">News</h2></div>
+          <ul class="news-list" tabindex="0" aria-label="Latest news; scroll for more">
+            <li><time datetime="2026-09">2026.09</time><p>Welcomed two new students to our research group.</p></li>
+            <li class="is-highlight"><time datetime="2026-07">2026.07</time><p><em>Agency in Generative AI Collaboration</em> was accepted to <strong>CHI 2026</strong>.</p></li>
+            <li><time datetime="2026-05">2026.05</time><p>Gave an invited talk at the Early-Career Research Forum.</p></li>
+            <li><time datetime="2026-02">2026.02</time><p>Released the first public version of our co-creation research toolkit.</p></li>
+            <li><time datetime="2025-12">2025.12</time><p>Presented ongoing work at the Graduate Research Symposium.</p></li>
+            <li><time datetime="2025-10">2025.10</time><p>Started a new research project on trustworthy multimodal intelligence.</p></li>
+          </ul>
+        </section> -->
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+        <section class="section education" id="education" aria-labelledby="education-title">
+          <div class="section-heading"><h2 id="education-title">Education</h2></div>
+          <div class="education-grid">
+            <article class="education-item"><div class="institution-mark"><img src="assets/logo-wuhan-university.png" alt="Wuhan University emblem" width="269" height="269" loading="lazy" /></div><div><h3>Wuhan University</h3><p>Ph.D. in Computer Science and Technology</p><p class="focus">Advisor: Prof. Chunxia Xiao</p><p class="period">2023.09 — Present</p></div></article>
+            <article class="education-item"><div class="institution-mark"><img src="assets/logo-ccnu.jpg" alt="Central China Normal University emblem" width="200" height="200" loading="lazy" /></div><div><h3>Central China Normal University</h3><p>M.Eng. in Computer Science and Technology</p><p class="focus">Advisor: Prof. Leyuan Liu</p><p class="period">2020.09 — 2023.06</p></div></article>
+            <article class="education-item"><div class="institution-mark"><img src="assets/logo-whpu.png" alt="Wuhan Polytechnic University emblem" width="422" height="416" loading="lazy" /></div><div><h3>Wuhan Polytechnic University</h3><p>B.S. in Information and Computing Science</p><p class="focus">Advisor: Prof. Kang Zhou</p><p class="period">2016.09 — 2020.06</p></div></article>
+          </div>
+        </section>
+
+<!--        <section class="section spotlight" id="research" aria-labelledby="spotlight-title">
+          <div class="section-heading"><h2 id="spotlight-title">Research Spotlight</h2><span>Human × AI</span></div>
+          <div class="spotlight-card">
+            <img src="assets/research-spotlight.svg" alt="Diagram showing a human-AI collaboration research workflow" width="1200" height="430" loading="lazy" />
+            <div class="spotlight-copy">
+              <div class="spotlight-label"><strong>Agency Lab</strong><i></i><a href="#project">Explore the project ↗</a></div>
+              <h3>Designing collaborative AI that keeps people in control</h3>
+              <p>A mixed-methods research program studying how explanations, controls, and interaction design shape agency in AI-assisted knowledge work.</p>
+            </div>
+          </div>
+        </section> -->
+
+        <section class="section" id="publications" aria-labelledby="publications-title">
+          <div class="section-heading"><h2 id="publications-title"> Publication</h2></div>
+          <div class="publications" id="publication-list" aria-live="polite"></div>
+          <p class="publication-status" id="publication-status">Loading publications…</p>
+          <noscript><p class="publication-status is-error">JavaScript is required to load publications.</p></noscript>
+        </section>
+
+        <section class="section awards" id="awards" aria-labelledby="awards-title">
+          <div class="section-heading"><h2 id="awards-title">Awards &amp; Service</h2></div>
+          <ul class="award-list">
+            <li><time>2023.05</time><div><strong>挑战杯全国大学生课外科技作品大赛</strong><span>第二负责人 · 湖北省一等奖</span></div></li>
+            <li><time>2022.08</time><div><strong>中国机器人及人工智能比赛</strong><span>负责人 · 国家三等奖</span></div></li>
+            <li><time>2019.10</time><div><strong>全国大学生数学建模竞赛</strong><span>负责人 · 湖北省三等奖</span></div></li>
+            <li><time>2019.05</time><div><strong>美国大学生数学建模竞赛</strong><span>负责人 · Meritorious Winner奖</span></div></li>
+          </ul>
+        </section>
+        </div>
+
+        <aside class="profile-card" aria-label="Academic profile and contact links">
+          <figure class="portrait">
+            <img src="assets/sjc.jpg" alt="Portrait of Jianchi Sun" width="720" height="900" fetchpriority="high" />
+            <figcaption class="profile-details">
+              <p class="profile-name">Jianchi Sun</p>
+              <!-- <p class="profile-name-cn" lang="zh-CN">孙见弛</p> -->
+              <p class="profile-role">Ph.D. Candidate</p>
+              <p class="profile-school">School of Computer Science</p>
+              <a class="profile-university" href="https://cs.whu.edu.cn/" target="_blank" rel="noreferrer">Wuhan University</a>
+              <p class="profile-location">Wuhan, China</p>
+              <div class="profile-actions" aria-label="Academic profiles and contact">
+                <a href="https://scholar.google.com.hk/citations?user=JEDKSXsAAAAJ&amp;hl=zh-CN" target="_blank" rel="noreferrer">Google Scholar</a>
+                <a href="https://github.com/sunjc0306" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="./assets/sunjc0306_resume.pdf" aria-label="View curriculum vitae highlights">CV</a>
+                <a href="mailto:sunjc0306@whu.edu.cn">Email</a>
+              </div>
+            </figcaption>
+          </figure>
+        </aside>
+      </main>
+
+      <!-- <footer><span>© <span id="year"></span> Jianchi Sun · Last updated October 2026</span><div><a href="mailto:sunjc0306@whu.edu.cn">sunjc0306@whu.edu.cn</a><a href="#top">Back to top ↑</a></div></footer> -->
+    </div>
+    <script src="script.js?v=5"></script>
+  </body>
+</html>
