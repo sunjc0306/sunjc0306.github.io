@@ -1,24 +1,192 @@
+const translations = {
+  en: {
+    pageTitle: 'Jianchi Sun | Academic Homepage',
+    skip: 'Skip to content',
+    'nav.about': 'About',
+    'nav.education': 'Education',
+    'nav.publications': 'Publications',
+    'nav.awards': 'Awards',
+    'about.title': 'About Me <span>孙见弛</span>',
+    'about.bio': 'I am a Ph.D. candidate in computer science and technology, supervised by <a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">Prof. Chunxia Xiao</a>, at Wuhan University, China. Before that, I received the B.S. degree in information and computing science from Wuhan Polytechnic University, China, in 2020, and the M.E. degree in computer science and technology from Central China Normal University, China, in 2023.',
+    'about.papers': 'I have authored (co-authored) more than 10 papers in refereed top international journals and conference proceedings, including IEEE TVCG, ACM TOG, IEEE TMM, AAAI, ACM MM, and Chinese Journal of CAD&CG, etc.',
+    'about.interests': 'My research interests include geometry processing and 3D human reconstruction.',
+    'about.availability': 'I am open to research collaborations and academic opportunities. Please feel free to get in touch.',
+    'education.title': 'Education',
+    'education.whu': 'Wuhan University',
+    'education.phd': 'Ph.D. in Computer Science and Technology',
+    'education.advisorXiao': 'Advisor: Prof. Chunxia Xiao',
+    'education.present': '2023.09 — Present',
+    'education.ccnu': 'Central China Normal University',
+    'education.master': 'M.E. in Computer Science and Technology',
+    'education.advisorLiu': 'Advisor: Prof. Leyuan Liu',
+    'education.whpu': 'Wuhan Polytechnic University',
+    'education.bachelor': 'B.S. in Information and Computing Science',
+    'education.advisorZhou': 'Advisor: Prof. Kang Zhou',
+    'publications.title': 'Publication',
+    'publications.loading': 'Loading publications…',
+    'publications.empty': 'No publications yet.',
+    'publications.error': 'Unable to load publications. Please check publications.json.',
+    'awards.title': 'Awards & Service',
+    'awards.challenge': 'Challenge Cup National College Student Science and Technology Competition',
+    'awards.challengePrize': 'Second Lead · First Prize of Hubei Province',
+    'awards.robot': 'China Robot and Artificial Intelligence Competition',
+    'awards.robotPrize': 'Project Lead · National Third Prize',
+    'awards.modeling': 'National College Student Mathematical Modeling Competition',
+    'awards.modelingPrize': 'Project Lead · Third Prize of Hubei Province',
+    'awards.mcm': 'Mathematical Contest in Modeling',
+    'awards.mcmPrize': 'Project Lead · Meritorious Winner',
+    'profile.role': 'Ph.D. Candidate',
+    'profile.school': 'School of Computer Science',
+    'profile.university': 'Wuhan University',
+    'profile.location': 'Wuhan, China',
+    menuOpen: 'Open menu',
+    menuClose: 'Close menu',
+    themeDark: 'Switch to dark mode',
+    themeLight: 'Switch to light mode',
+    languageSwitch: '切换到中文',
+    navLabel: 'Main navigation',
+    displayPreferences: 'Display preferences'
+  },
+  zh: {
+    pageTitle: '孙见弛｜个人学术主页',
+    skip: '跳转到主要内容',
+    'nav.about': '关于我',
+    'nav.education': '教育经历',
+    'nav.publications': '论文发表',
+    'nav.awards': '获奖经历',
+    'about.title': '关于我 <span>Jianchi Sun</span>',
+    'about.bio': '我目前是武汉大学计算机科学与技术专业博士研究生，<a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">肖春霞教授</a>。此前，我于2020年在武汉轻工大学获得信息与计算科学学士学位，并于2023年在华中师范大学获得计算机科学与技术硕士学位。',
+    'about.papers': '我已在国际期刊和会议上发表（合作发表）论文十余篇，包括 IEEE TVCG、ACM TOG、IEEE TMM、AAAI、ACM MM 和《计算机辅助设计与图形学学报》等。',
+    'about.interests': '我的研究兴趣包括几何处理与三维人体重建。',
+    'about.availability': '欢迎开展科研合作与学术交流，期待与您联系。',
+    'education.title': '教育经历',
+    'education.whu': '武汉大学',
+    'education.phd': '计算机科学与技术 · 博士研究生',
+    'education.advisorXiao': '导师：肖春霞 教授',
+    'education.present': '2023.09 — 至今',
+    'education.ccnu': '华中师范大学',
+    'education.master': '计算机科学与技术 · 工学硕士',
+    'education.advisorLiu': '导师：刘乐元 教授',
+    'education.whpu': '武汉轻工大学',
+    'education.bachelor': '信息与计算科学 · 理学学士',
+    'education.advisorZhou': '导师：周康 教授',
+    'publications.title': '论文发表',
+    'publications.loading': '正在加载论文…',
+    'publications.empty': '暂无论文。',
+    'publications.error': '论文加载失败，请检查 publications.json。',
+    'awards.title': '获奖经历',
+    'awards.challenge': '挑战杯全国大学生课外科技作品大赛',
+    'awards.challengePrize': '第二负责人 · 湖北省一等奖',
+    'awards.robot': '中国机器人及人工智能比赛',
+    'awards.robotPrize': '负责人 · 国家三等奖',
+    'awards.modeling': '全国大学生数学建模竞赛',
+    'awards.modelingPrize': '负责人 · 湖北省三等奖',
+    'awards.mcm': '美国大学生数学建模竞赛',
+    'awards.mcmPrize': '负责人 · Meritorious Winner 奖',
+    'profile.role': '博士研究生',
+    'profile.school': '计算机学院',
+    'profile.university': '武汉大学',
+    'profile.location': '中国 · 武汉',
+    menuOpen: '打开菜单',
+    menuClose: '关闭菜单',
+    themeDark: '切换到夜间模式',
+    themeLight: '切换到白天模式',
+    languageSwitch: 'Switch to English',
+    navLabel: '主导航',
+    displayPreferences: '显示偏好设置'
+  }
+};
+
 const menuButton = document.querySelector('.menu-button');
 const nav = document.querySelector('#site-nav');
+const languageToggle = document.querySelector('#language-toggle');
+const themeToggle = document.querySelector('#theme-toggle');
+const publicationList = document.querySelector('#publication-list');
+const publicationStatus = document.querySelector('#publication-status');
+const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+let currentLanguage = localStorage.getItem('site-language') === 'zh' ? 'zh' : 'en';
+let currentTheme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
+let publicationData = [];
+
+function translate(key) {
+  return translations[currentLanguage][key] || translations.en[key] || key;
+}
+
+function updateMenuLabel() {
+  if (!menuButton) return;
+  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+  menuButton.setAttribute('aria-label', translate(isOpen ? 'menuClose' : 'menuOpen'));
+}
+
+function updateThemeLabel() {
+  if (!themeToggle) return;
+  const isDark = currentTheme === 'dark';
+  const label = translate(isDark ? 'themeLight' : 'themeDark');
+  themeToggle.setAttribute('aria-label', label);
+  themeToggle.setAttribute('title', label);
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+}
+
+function applyTheme(theme, persist = true) {
+  currentTheme = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = currentTheme;
+  if (themeMeta) themeMeta.setAttribute('content', currentTheme === 'dark' ? '#11171a' : '#ffffff');
+  updateThemeLabel();
+  if (persist) localStorage.setItem('site-theme', currentTheme);
+}
+
+function applyLanguage(language, persist = true) {
+  currentLanguage = language === 'zh' ? 'zh' : 'en';
+  document.documentElement.lang = currentLanguage === 'zh' ? 'zh-CN' : 'en';
+  document.title = translate('pageTitle');
+
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    element.textContent = translate(element.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach((element) => {
+    element.innerHTML = translate(element.dataset.i18nHtml);
+  });
+
+  if (languageToggle) {
+    languageToggle.textContent = currentLanguage === 'en' ? '中文' : 'EN';
+    languageToggle.setAttribute('aria-label', translate('languageSwitch'));
+    languageToggle.setAttribute('title', translate('languageSwitch'));
+  }
+  nav?.setAttribute('aria-label', translate('navLabel'));
+  document.querySelector('.header-controls')?.setAttribute('aria-label', translate('displayPreferences'));
+  updateMenuLabel();
+  updateThemeLabel();
+  renderPublications();
+
+  if (persist) localStorage.setItem('site-language', currentLanguage);
+}
 
 menuButton?.addEventListener('click', () => {
   const open = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!open));
   nav?.classList.toggle('open', !open);
+  updateMenuLabel();
 });
 
 nav?.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
     menuButton?.setAttribute('aria-expanded', 'false');
+    updateMenuLabel();
   });
+});
+
+languageToggle?.addEventListener('click', () => {
+  applyLanguage(currentLanguage === 'en' ? 'zh' : 'en');
+});
+
+themeToggle?.addEventListener('click', () => {
+  applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
 });
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
-
-const publicationList = document.querySelector('#publication-list');
-const publicationStatus = document.querySelector('#publication-status');
 
 function publicationLink(paper) {
   const paperLink = paper.links?.find((link) => link.label?.toLowerCase() === 'paper');
@@ -55,6 +223,11 @@ function publicationLinkIcon(label = '') {
   return icon;
 }
 
+function translatedPaperLink(kind, fallback) {
+  if (currentLanguage !== 'zh') return fallback;
+  return { project: '项目主页', paper: '论文', code: '代码', demo: '演示' }[kind] || fallback;
+}
+
 function renderPublication(paper) {
   const article = document.createElement('article');
   article.className = 'publication';
@@ -64,7 +237,7 @@ function renderPublication(paper) {
   const imageLink = document.createElement('a');
   imageLink.className = 'paper-image';
   imageLink.href = primaryUrl;
-  imageLink.setAttribute('aria-label', `Open ${paper.title}`);
+  imageLink.setAttribute('aria-label', `${currentLanguage === 'zh' ? '打开' : 'Open'} ${paper.title}`);
 
   if (paper.image?.src) {
     const image = document.createElement('img');
@@ -112,7 +285,7 @@ function renderPublication(paper) {
       link.href = item.url;
       const kind = (item.label || 'link').toLowerCase();
       link.className = `paper-link paper-link-${kind.replace(/[^a-z0-9]+/g, '-')}`;
-      link.append(publicationLinkIcon(kind), document.createTextNode(item.label));
+      link.append(publicationLinkIcon(kind), document.createTextNode(translatedPaperLink(kind, item.label)));
       links.append(link);
     });
     copy.append(links);
@@ -120,6 +293,13 @@ function renderPublication(paper) {
 
   article.append(imageLink, copy);
   return article;
+}
+
+function renderPublications() {
+  if (!publicationList || !publicationData.length) return;
+  const fragment = document.createDocumentFragment();
+  publicationData.forEach((paper) => fragment.append(renderPublication(paper)));
+  publicationList.replaceChildren(fragment);
 }
 
 async function loadPublications() {
@@ -132,22 +312,23 @@ async function loadPublications() {
     const data = await response.json();
     if (!Array.isArray(data.publications)) throw new Error('Invalid publications data');
 
-    const fragment = document.createDocumentFragment();
-    data.publications.forEach((paper) => fragment.append(renderPublication(paper)));
-    publicationList.replaceChildren(fragment);
+    publicationData = data.publications;
+    renderPublications();
 
     if (publicationStatus) {
-      publicationStatus.textContent = data.publications.length ? '' : 'No publications yet.';
-      publicationStatus.hidden = data.publications.length > 0;
+      publicationStatus.textContent = publicationData.length ? '' : translate('publications.empty');
+      publicationStatus.hidden = publicationData.length > 0;
     }
   } catch (error) {
     console.error('Unable to load publications.json', error);
     if (publicationStatus) {
       publicationStatus.hidden = false;
       publicationStatus.classList.add('is-error');
-      publicationStatus.textContent = 'Unable to load publications. Please check publications.json.';
+      publicationStatus.textContent = translate('publications.error');
     }
   }
 }
 
+applyTheme(currentTheme, false);
+applyLanguage(currentLanguage, false);
 loadPublications();
