@@ -129,7 +129,7 @@
       "venue": "TVC",
       "year": "2026",
       "badge": "CCF C",
-      "title": "HAFMat: Hybrid priors guided adaptive fusion for single-image human material estimation",
+      "title": "HAFMat: Hybrid Priors Guided Adaptive Fusion for Single-image Human Material Estimation",
       "authors": [
         { "name": "Yu Jiang" },
         { "name": "Jiahao Xia" },
@@ -152,7 +152,7 @@
       "venue": "TVC",
       "year": "2026",
       "badge": "CCF C",
-      "title": "DuoLit: dual-level priors and gated lighting injection for human material estimation",
+      "title": "DuoLit: Dual-level Priors and Gated Lighting Injection for Human Material Estimation",
       "authors": [
         { "name": "Yu Jiang" },
         { "name": "Jianchi Sun", "highlight": true },
@@ -174,7 +174,7 @@
       "venue": "TVC",
       "year": "2026",
       "badge": "CCF C",
-      "title": "GUIDE: Dual-Gated semantic conditioning with correctable priors for single-image human material estimation",
+      "title": "GUIDE: Dual-Gated Semantic Conditioning with Correctable Priors for Single-image Human Material Estimation",
       "authors": [
         { "name": "Yu Jiang" },
         { "name": "Jianchi Sun", "highlight": true },
@@ -222,7 +222,7 @@
     "venue": "TVC",
     "year": "2025",
     "badge": "CCF C",
-    "title": "EE-Head: emotion estimation for precise facial expression in NeRF head avatars",
+    "title": "EE-Head: Emotion Estimation for Precise Facial Expression in NeRF Head Avatars",
     "authors": [
       { "name": "Enxu Zhao" },
       { "name": "Jianchi Sun", "highlight": true },
@@ -246,7 +246,7 @@
     "venue": "BIT",
     "year": "2024",
     "badge": "CCF C",
-    "title": "Evaluation of the gross motor abilities of autistic children with a computerised evaluation method",
+    "title": "Evaluation of the Gross Motor Abilities of Autistic Children with a Computerised Evaluation Method",
     "authors": [
       { "name": "Xiaodi Liu" },
 	    { "name": "Jingying Chen" },
@@ -369,7 +369,7 @@
     "venue": "Multimedia Systems",
     "year": "2023",
     "badge": "CCF C",
-    "title": "Single-image clothed 3D human reconstruction guided by a well-aligned parametric body model",
+    "title": "Single-image Clothed 3D Human Reconstruction Guided by a Well-aligned Parametric Body Model",
     "authors": [
       { "name": "Leyuan Liu" },
       { "name": "Yunqi Gao" },
