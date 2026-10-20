@@ -51,7 +51,7 @@ const translations = {
     'nav.publications': '论文发表',
     'nav.awards': '获奖经历',
     'about.title': '关于我 <span>Jianchi Sun</span>',
-    'about.bio': '我目前是武汉大学计算机科学与技术专业博士研究生，<a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">肖春霞教授</a>。此前，我于2020年在武汉轻工大学获得信息与计算科学学士学位，并于2023年在华中师范大学获得计算机科学与技术硕士学位。',
+    'about.bio': '我目前是武汉大学计算机科学与技术专业博士研究生，导师<a href="https://graphvision.whu.edu.cn/" target="_blank" rel="noreferrer">肖春霞教授</a>。此前，我于2020年在武汉轻工大学获得信息与计算科学学士学位，并于2023年在华中师范大学获得计算机科学与技术硕士学位。',
     'about.papers': '我已在国际期刊和会议上发表（合作发表）论文十余篇，包括 IEEE TVCG、ACM TOG、IEEE TMM、AAAI、ACM MM 和《计算机辅助设计与图形学学报》等。',
     'about.interests': '我的研究兴趣包括几何处理与三维人体重建。',
     'about.availability': '欢迎开展科研合作与学术交流，期待与您联系。',
