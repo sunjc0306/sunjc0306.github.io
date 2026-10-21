@@ -80,7 +80,7 @@ const translations = {
     'profile.school': '计算机学院',
     'profile.university': '武汉大学',
     'profile.location': '中国 · 武汉',
-	      'profile.wechat': '微信',
+    'profile.wechat': '微信',
     'profile.wechatHint': '扫码添加，点击图片可查看原图',
     'profile.wechatSave': '下载保存二维码',
     'profile.wechatClose': '关闭微信二维码',
@@ -101,6 +101,10 @@ const themeToggle = document.querySelector('#theme-toggle');
 const publicationList = document.querySelector('#publication-list');
 const publicationStatus = document.querySelector('#publication-status');
 const themeMeta = document.querySelector('meta[name="theme-color"]');
+const wechatContact = document.querySelector('.wechat-contact');
+const wechatButton = document.querySelector('.wechat-button');
+const wechatPopover = document.querySelector('.wechat-popover');
+const wechatCloseButton = document.querySelector('.wechat-close');
 
 let currentLanguage = localStorage.getItem('site-language') === 'zh' ? 'zh' : 'en';
 let currentTheme = document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light';
@@ -123,6 +127,21 @@ function updateThemeLabel() {
   themeToggle.setAttribute('aria-label', label);
   themeToggle.setAttribute('title', label);
   themeToggle.setAttribute('aria-pressed', String(isDark));
+}
+
+function setWechatOpen(open) {
+  if (!wechatContact || !wechatButton) return;
+  wechatContact.classList.toggle('is-open', open);
+  wechatButton.setAttribute('aria-expanded', String(open));
+  document.body.classList.toggle('wechat-open', open);
+}
+
+function updateWechatLabel() {
+  if (!wechatButton) return;
+  const label = translate('profile.wechat');
+  wechatButton.setAttribute('aria-label', label);
+  wechatButton.setAttribute('title', label);
+  wechatCloseButton?.setAttribute('aria-label', translate('profile.wechatClose'));
 }
 
 function applyTheme(theme, persist = true) {
@@ -154,6 +173,7 @@ function applyLanguage(language, persist = true) {
   document.querySelector('.header-controls')?.setAttribute('aria-label', translate('displayPreferences'));
   updateMenuLabel();
   updateThemeLabel();
+  updateWechatLabel();
   renderPublications();
 
   if (persist) localStorage.setItem('site-language', currentLanguage);
@@ -180,6 +200,24 @@ languageToggle?.addEventListener('click', () => {
 
 themeToggle?.addEventListener('click', () => {
   applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+});
+
+wechatButton?.addEventListener('click', (event) => {
+  event.stopPropagation();
+  setWechatOpen(wechatButton.getAttribute('aria-expanded') !== 'true');
+});
+
+wechatContact?.addEventListener('click', (event) => event.stopPropagation());
+wechatCloseButton?.addEventListener('click', () => setWechatOpen(false));
+wechatPopover?.addEventListener('click', (event) => {
+  if (event.target === wechatPopover) setWechatOpen(false);
+});
+document.addEventListener('click', () => setWechatOpen(false));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    setWechatOpen(false);
+    wechatButton?.focus();
+  }
 });
 
 const year = document.querySelector('#year');
